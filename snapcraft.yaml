@@ -1,0 +1,23 @@
+name: e820-bios
+version: 0.00.01
+summary: A tool to dump BIOS e820 memory map
+description: e820-bios calls into legacy BIOS interrupt 0x15 to get e820 memory map information
+confinement: strict
+grade: stable
+
+parts:
+    eatpages:
+        plugin: make
+        source: https://github.com/ColinIanKing/eatpages.git
+
+        build-packages:
+            - gcc
+            - make
+
+        prime:
+            - usr/bin/
+
+apps:
+    eatpages:
+        plugs: [hardware-observe, system-observe]
+        command: usr/bin/eatpages
