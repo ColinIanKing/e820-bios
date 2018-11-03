@@ -33,4 +33,4 @@ clean:
 .PHONEY: install
 install:
 	mkdir -p ${DESTDIR}${BINDIR}
-	cp eatpages ${DESTDIR}${BINDIR}
+	cp e820-bios ${DESTDIR}${BINDIR}
