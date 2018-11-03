@@ -8,7 +8,7 @@ grade: stable
 parts:
     eatpages:
         plugin: make
-        source: https://github.com/ColinIanKing/eatpages.git
+        source: https://github.com/ColinIanKing/e820-bios.git
 
         build-packages:
             - gcc
@@ -20,4 +20,4 @@ parts:
 apps:
     eatpages:
         plugs: [hardware-observe, system-observe]
-        command: usr/bin/eatpages
+        command: usr/bin/e820-bios
