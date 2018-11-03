@@ -25,6 +25,7 @@ CFLAGS  += -O2 -Wall -Werror  -lx86
 
 e820-bios: e820-bios.c
 	$(CC) $< -lx86 -o $@
+	strip $@
 
 .PHONEY: clean
 clean:
