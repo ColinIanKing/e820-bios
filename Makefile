@@ -28,7 +28,7 @@ e820-bios: e820-bios.c
 
 .PHONEY: clean
 clean:
-	rm e820-bios e820-bios.o
+	rm -f e820-bios e820-bios.o
 
 .PHONEY: install
 install:
