@@ -13,6 +13,8 @@ parts:
         build-packages:
             - gcc
             - make
+        stage-packages:
+            - libx86-dev
 
         prime:
             - usr/bin/
