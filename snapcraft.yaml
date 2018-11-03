@@ -1,5 +1,5 @@
 name: e820-bios
-version: 0.00.01
+version: 0.00.01-1
 summary: A tool to dump BIOS e820 memory map
 description: e820-bios calls into legacy BIOS interrupt 0x15 to get e820 memory map information
 confinement: strict
@@ -13,6 +13,7 @@ parts:
         build-packages:
             - gcc
             - make
+            - libx86-dev
         stage-packages:
             - libx86-dev
 
