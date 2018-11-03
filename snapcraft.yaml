@@ -6,7 +6,7 @@ confinement: strict
 grade: stable
 
 parts:
-    eatpages:
+    e820-bios:
         plugin: make
         source: https://github.com/ColinIanKing/e820-bios.git
 
@@ -20,6 +20,6 @@ parts:
             - usr/bin/
 
 apps:
-    eatpages:
+    e820-bios:
         plugs: [hardware-observe, system-observe]
         command: usr/bin/e820-bios
